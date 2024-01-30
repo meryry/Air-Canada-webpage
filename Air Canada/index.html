@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+<header>
+    <h1>Air Canada Recruitment</h1>
+    <i class="fa-solid fa-plane"></i>
+    <button onclick="toggleNav()">Toggle Nav</button>
+    <i class="fa-solid fa-plane"></i>
+</header>
+
+<nav>
+    <button onclick="changeColorScheme()">Change Color Scheme</button>
+</nav>
+
+<section id="reviews">
+    <h2>Employee Reviews</h2>
+    <div class="review-container">
+        <div class="review" id="review1">
+            <img src="https://th.bing.com/th/id/OIP.x79sDZquitVAKgDcPTQI4gHaHZ?w=161&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Employee 1">
+            <p>Thoughts about Air Canada: Wonderful company to work for!</p>
+            <p>Job Title: Pilot</p>
+        </div>
+        <div class="review" id="review2">
+            <img src="https://th.bing.com/th/id/OIP.FaxXbQYOcqQMchNNa9Og7AHaJX?w=148&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Employee 2">
+            <p>Thoughts about Air Canada: Ecited and happy to be working here !</p>
+            <p>Job Title: Flight Attendant</p>
+        </div>
+        <div class="review" id="review3">
+            <img src="https://th.bing.com/th/id/OIP.Hk-uEWMsK-Nm35H0z6blVQHaHa?pid=ImgDet&w=200&h=200&c=7&dpr=1.3" alt="Employee 3">
+            <p>Thoughts about Air Canada: a very lovely place to be and pround to serve out!</p>
+            <p>Job Title: security guards</p>
+        </div>
+        <div class="review" id="review4">
+            <img src="https://airtravelcourses.com/wp-content/uploads/2019/05/H_Passenger.jpg" alt="Employee 4">
+            <p>Thoughts about Air Canada: Great workplace, i love the environment!</p>
+            <p>Job Title: reservation clerks</p>
+        </div>
+    </div>
+    <button onclick="cycleReviews()">Next Review</button>
+</section>
+
+<section id="counterSection">
+    <h2>Like/Dislike Counter</h2>
+    <div id="counter">0</div>
+    <button onclick="updateCounter(2)">Like</button>
+    <button onclick="updateCounter(-1)">Dislike</button>
+    <button onclick="resetCounter()">Reset</button>
+</section>
+<title>Air Canada Button</title>
+<button id="airCanadaButton" onclick="bookRandomFlight()">Book Your Air Canada Flight</button>
+<script src="app.js"></script>
+<script src="script.js"></script>
+
